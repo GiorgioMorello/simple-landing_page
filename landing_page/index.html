@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c573a3cda6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formarted.css">
+
+
+</head>
+<body class="main-bg">
+    
+    <input type="checkbox" id="close-menu" role="button" aria-label="close-menu" class="hamburger">
+    <label for="close-menu" title="close-menu" class="hamburger-label">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+    <aside class="menu white-bg" id="">
+        <section class="wrapper flex-content">
+            <nav class="nav-logo">
+                <h1 onclick="getElementById('close-menu').checked=false;"><a href="#home">LOGO</a></h1>    
+            </nav>
+
+            <nav class="navbar">
+                <ul onclick="getElementById('close-menu').checked=false;">
+                    <li class="navbar-item"><a href="#intro">intro</a></li>
+                    <li class="navbar-item"><a href="#top3">top 3</a></li>
+                    <li class="navbar-item"><a href="#gallery">gallery</a></li>
+                    <li class="navbar-item"><a href="#work">work</a></li>
+                    <li class="navbar-item"><a href="#contact">contact</a></li>
+
+                </ul>
+            </nav>
+        </section>    
+    </aside>
+    
+    <div class="spacing"></div>
+    
+    <section id="home" class="section main-bg">
+        <header class="wrapper main-header">
+            <div class="text-content">
+                <h2>Learn to style HTML using CSS</h2>
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+            </div>
+            
+            <div class="img-header">
+                <img src="img/html_css.svg">
+            </div>
+        </header>
+            
+            
+    </section>
+    <section id="intro" class="section white-bg">
+        <div class="job-section wrapper">
+            <div class="job-text-content">
+                <h2>Solving common CSS problems</h2>
+                <p>The release of Apple Silicon-based Macs at the end of last year generated a flurry of news coverage and some surprises at the machine’s performance. This post details some background information on the experience of porting Firefox to run natively on these CPUs.</p>
+
+                <p>We’ll start with some background on the Mac transition and give an overview of Firefox internals that needed to know about the new architecture, before moving on to the concept of Universal Binaries.</p>
+
+                <p>We’ll then explain how DRM/EME works on the new platform, talk about our experience with macOS Big Sur, and discuss various updater problems we had to deal with. We’ll conclude with the release and an overview of various other improvements that are in the pipeline.</p>
+            </div>
+        </div>
+    
+    </section>
+    
+    
+    <section class="section main-bg" id="top3">
+        <div class="wrapper portifolio">
+            <div class="flex-job-section">
+                <header class="title-top-3">
+                    <h2>top 3 jobs</h2>
+                    <p>Here are some recent works.</p>
+                </header>  
+                <div class="top-grid">
+                    <article class="top-grid-item">
+                        <h3>First</h3>
+                        <p>This button would add a box to the row of key content boxes below the intro text. This should put the box there regardless of where the user is currently writing.</p>
+                    </article>
+                        
+                    <article class="top-grid-item">
+                        <h3>Second</h3>
+                        <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.</p>
+                    </article>
+                    
+                    <article class="top-grid-item">
+                        <h3>Third One</h3>
+                        <p>You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t support</p>
+                    </article>
+                </div>
+            
+            </div> 
+        </div>    
+    </section>
+    
+    
+    <section class="section white-bg" id="gallery">
+        <div class="wrapper portifolio">
+            <div class="flex-gallery-section">
+                <header class="title-gallery">
+                    <h2>Gallery</h2>
+                    <p>Here are some of my pics</p>
+                </header>
+                
+                <div class="grid-gallery">
+                    <div class="card-img">
+                        <img src="img/capybara.jpg">
+                    </div>
+                    
+                    <div class="card-img">
+                        <img src="img/capybara.jpg">
+                    </div>
+                    
+                    <div class="card-img">
+                        <img src="img/capybara.jpg">
+                    </div>
+                    
+                    
+                    <div class="card-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=1">
+                    </div>
+                    
+                    <div class="card-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=2">
+                    </div>
+                    
+                    
+                    <div class="card-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=3">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    
+    </section>
+    
+    
+    
+    
+    
+     <section class="section main-bg" id="work">
+        <div class="wrapper portifolio">
+            <div class="flex-job-section">
+                <header class="title-top-3">
+                    <h2>top 3 jobs</h2>
+                    <p>Here are some recent works.</p>
+                </header>  
+                <div class="top-grid">
+                    <article class="top-grid-item">
+                        <h3>A good one</h3>
+                        <p>Mauris id augue vehicula, aliquet justo vel, faucibus magna. In pellentesque libero ac quam consequat, nec commodo libero tincidunt. Sed condimentum porttitor magna nec ultrices. Morbi sagittis ultricies rutrum. In non venenatis urna. Duis a laoreet sapien. </p>
+                    </article>
+                        
+                    <article class="top-grid-item">
+                        <h3>Great job</h3>
+                        <p>I'd suggest having a popup that asks where in the row to insert the box (at the beginning or end), what title to give the box, what text to put in the box, and where the box should link to. The entire box should serve as a link to the destination page.</p>
+                    </article>
+                    
+                    <article class="top-grid-item">
+                        <h3>My first job</h3>
+                        <p>You can also include a type attribute containing the MIME type of the resource, so a browser can quickly see what resources are on offer, and ignore ones that it doesn’t support</p>
+                    </article>
+                </div>
+            
+            </div> 
+        </div>    
+    </section>
+    
+    
+    <section id="intro" class="section white-bg">
+        <div class="job-section wrapper">
+            <div class="job-text-content">
+                <h2>Pricing</h2>
+                <p>In this module, we continue our coverage of all JavaScript's key fundamental features, turning our attention to commonly-encountered types of code block such as conditional statements, loops, functions, and events. You've seen this stuff already in the course, but only in passing — here we'll discuss it all explicitly.</p>
+            
+                <div class="responsive-table">
+                    <table>
+                        <caption>
+                            Pricing table
+                        </caption>
+
+                        <thead>
+                            <tr>
+                                <th>Title 1</th>
+                                <th>Title 2</th>
+                                <th>Title 3</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+
+                            <tr>
+                                <td>Content 1</td>
+                                <td>Content 2</td>
+                                <td>Content 3</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Footer 1</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>    
+            </div>    
+        </div>
+    
+    </section>
+    
+    
+    <footer class="section main-bg" id="contact" style="margin-bottom: 2rem;">
+        <div class="wrapper grid-footer">
+            <div class="text-content">
+                <h2>Contact Us</h2>
+                <p>The main entry point for core JavaScript documentation on MDN — this is where you'll find extensive reference docs on all aspects of the JavaScript language, and some advanced tutorials aimed at experienced JavaScripters.</p>
+            </div>
+            
+            <div class="img-footer">
+                <img src="img/footer-img2.svg">
+            </div>
+            
+            <form class="form-footer">
+                <fieldset class="form-grid">
+                    <legend>Contact Me</legend>
+                    
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="firs-name" name="first-name" placeholder="Your Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Your Last Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Your E-mail">
+                    </div>
+                    
+                    <div class="form-group f-width">
+                        <label for="message">Message</label>
+                        <textarea cols="30" rows="10" id="message" name="message"></textarea>
+                    </div>
+                    
+                    <div class="form-group f-width button-p">
+                        <button type="submit" class="button-child">Send Message</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,542 @@
+:root {
+    --primary-color: #0A1128;
+    --white: #FFF;
+    --light-gray: #ddd;
+    --gutter: 3rem;
+}
+
+
+
+.spacing {
+    height: 6.5rem;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+.main-bg {
+    background-image: url(../img/main_bg.svg);
+    background-size: cover;
+    background-position: center center; 
+    color: var(--white);
+}
+
+
+
+.white-bg {
+    background-color: var(--white);
+    color: var(--primary-color)
+}
+
+
+
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 var(--gutter);
+}
+
+
+
+
+.menu {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.flex-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+
+
+.nav-logo h1 a {
+    color: inherit;
+}
+
+
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-item + .navbar-item {
+    margin-left: 2rem
+}
+
+
+
+.navbar-item a {
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+    transition: 0.3s;
+    position: relative;
+    
+}
+
+
+
+.navbar-item a::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 0;
+    height: 0.15rem;
+    background-color: orangered;
+    transition: 0.6s;
+}
+
+
+
+.navbar-item a:hover::after {
+    width: 100%;
+    left: 0%;
+    transition-timing-function: cubic-bezier(.05,.81,.56,1.58);
+}
+
+
+
+.navbar-item a:hover {
+    color: gray;
+}
+
+
+
+/* Seção Intro */
+
+.main-header {
+    position: relative;
+    top: -6rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: var(--gutter);
+    min-height: 100vh;
+    padding: 3rem;
+}
+
+
+
+.text-content, .img-header {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.text-content h2 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    line-height: 1.2;
+    margin-bottom: 3rem;
+    
+}
+
+.img-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Seção JOB */
+
+.job-section {
+    min-height: 100vh;
+}
+
+.job-text-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    justify-content: center;
+    
+}
+
+
+.job-text-content h2 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin: 0 0 3rem 0;
+    
+}
+
+.job-text-content p {
+    margin: 0 0 3rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+/* Seção TOP-3 JOB */
+
+
+.portifolio {
+    padding: 8rem 3rem;
+    
+}
+
+
+
+.flex-job-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh
+}
+
+.title-top-3 {
+    margin-bottom: 9rem;
+}
+
+.title-top-3 h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+
+.top-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    padding: 0rem;
+    counter-reset: grid-counter;
+    
+}
+
+
+.top-grid-item h3 {
+    font-size: 2.6rem;
+}
+
+.top-grid-item h3::before {
+    content: counter(grid-counter);
+    counter-increment: grid-counter;
+    margin-right: 2rem;
+    font-size: 7rem;
+    font-style: italic;
+        
+}
+    
+
+
+
+/* Seção Gallery */
+
+
+.flex-gallery-section {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+
+.title-gallery {
+    margin-bottom: 9rem;
+}
+
+.title-gallery h2 {
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+}
+
+.card-img {
+    overflow: hidden;
+    max-height: 360px;
+    max-width: 360px;
+    width: 100%;
+}
+
+.card-img img {
+    transition: 0.5s;
+}
+
+.card-img:hover img {
+    transform: scale(1.2) translate(-3%, -3%) rotate(3deg)
+    
+}
+
+
+/* Seção Pricing */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    text-align: left;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+thead th {
+    background-color: var(--light-gray)
+}
+
+table td, table th {
+    border: 1px solid var(--light-gray);
+    text-align: left;
+    padding: 0.5rem;  
+}
+
+tfoot td {
+    background-color: var(--light-gray)
+}
+
+
+
+
+
+
+
+/* Seção Footer */
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: var(--gutter);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem;
+}
+
+
+
+.img-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.form-footer .form-grid {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+    
+}
+
+.form-grid legend {
+    margin-bottom: 2.5rem;
+    font-style: italic;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.form-footer {
+    grid-column: span 2;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: var(--white);
+    padding: 1.2rem 2rem;
+    width: 100%;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px 0.5px rgb(255, 73, 0);
+}
+
+
+
+.f-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+
+
+
+
+.button-p {
+    position: relative;
+}
+
+.button-child {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.2rem 1.3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button-child:hover {
+    background: var(--white);
+    color: black;
+}
+
+
+
+@media (max-width: 800px) {
+    
+    .menu {
+        bottom: 0;
+    }
+    
+    .navbar-item + .navbar-item {
+        margin-left: 0;
+    }
+    
+    .flex-content, .navbar ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .flex-content {
+        height: 100vh
+    }
+    
+    
+    
+    .main-header {
+        grid-template-columns: 1fr
+    }
+    
+    .top-grid {
+        grid-template-columns: 1fr
+    }
+    
+    .grid-gallery {
+        grid-template-columns: 1fr;
+        place-content: center;
+    }
+    
+    .card-img {
+        max-height: 100%; 
+        max-width: 100%;
+        
+    }
+    
+    .card-img img {
+        width: 100%;
+    }
+    
+    /* Hamburger Menu */
+
+    .menu {
+        display: none;
+    }
+    
+    .hamburger {
+        position: fixed;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        
+    }
+    
+    .hamburger-label {  
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        z-index: 6;
+        padding: 2px 2px;
+        transition: 0.5s;
+        background-color: var(--primary-color);
+        cursor: pointer;
+    }
+    
+    .hamburger-label:hover {
+        transform: scale(1.1);
+    }
+    
+    .bar {
+        color: blue;
+        width: 23px;
+        height: 3px;
+        background-color: var(--white);
+        margin: 5px 1px;
+    }
+    
+    .hamburger:checked~.menu {
+        display: block;
+    }
+    
+    /* Escondendo o menu quando o input checked */
+    .hamburger:checked~.hamburger-label {
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        
+    }
+    
+    .hamburger:checked~.hamburger-label::after {
+        content: '×';
+        position: fixed;
+        font-size: 5rem;
+        color: black;
+        top: 0;
+        left: 40rem;
+    }
+    
+}
+
+
+
+
+
