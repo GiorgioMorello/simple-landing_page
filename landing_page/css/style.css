@@ -536,6 +536,12 @@ tfoot td {
     
 }
 
+@media (max-width: 410px) {
+    .hamburger:checked~.hamburger-label::after {
+        left: 30rem;
+    }
+}
+
 
 
 
